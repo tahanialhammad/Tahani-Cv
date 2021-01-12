@@ -1,0 +1,22 @@
+%btngeneral{
+  border-width: medium!important;
+  border-radius: 0!important;
+  padding: .6rem 1.2rem !important;
+  text-transform: uppercase;
+  margin: 1rem;
+  font-size: 1.2rem !important;
+}
+.btn-lg{
+  @extend %btngeneral;
+}
+
+.btn-secondary{
+  @extend %btngeneral;
+  color: white !important;
+  background: $prcolor !important;
+  border-color: $prcolor !important;
+  &:hover{
+    background:$hover !important;
+    border-color:$hover !important;
+  }
+}
